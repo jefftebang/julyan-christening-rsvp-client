@@ -47,7 +47,9 @@ const Passage = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (passage.second_name === "icel" && passage.date === "04/13/2024") {
+    const secondName = passage.second_name.toLowerCase();
+
+    if (secondName === "icel" && passage.date === "04/13/2024") {
       navigate("/reservation");
     } else {
       if (passage.second_name !== "icel") {
