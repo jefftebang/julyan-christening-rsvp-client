@@ -15,11 +15,7 @@ const Passage = () => {
   const handleDateChange = (e) => {
     setPassage({
       ...passage,
-      date: e.toLocaleDateString("ph", {
-        year: "numeric",
-        month: "2-digit",
-        day: "2-digit",
-      }),
+      date: e.toDateString(),
     });
     setDateIsCorrect(true);
     document
@@ -47,13 +43,13 @@ const Passage = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (passage.second_name === "icel" && passage.date === "04/13/2024") {
+    if (passage.second_name === "icel" && passage.date === "Sat Apr 13 2024") {
       navigate("/reservation");
     } else {
       if (passage.second_name !== "icel") {
         setSecondNameIsCorrect(false);
       }
-      if (passage.date !== "04/13/2024") {
+      if (passage.date !== "Sat Apr 13 2024") {
         setDateIsCorrect(false);
         document
           .querySelector("input#date")
