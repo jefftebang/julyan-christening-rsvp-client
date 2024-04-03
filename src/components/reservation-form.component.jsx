@@ -42,15 +42,12 @@ const ReservationForm = () => {
         ...(document.querySelector("input#second_seat_name") && {
           second_seat_name: guestInputs.second_seat_name,
         }),
-        ...(document.querySelector("input#second_seat_phone") && {
-          second_seat_phone: guestInputs.second_seat_phone,
-        }),
+        second_seat_phone: guestInputs.second_seat_phone,
         confirmation: guestInputs.confirmation,
       }),
     })
       .then((response) => response.json())
       .then((data) => {
-        console.log(data);
         if (data.msg === "success") {
           setGuestInputs(initInputs);
           document.getElementById("first_seat_phone").value = "";
