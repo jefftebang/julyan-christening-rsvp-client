@@ -47,9 +47,7 @@ const Passage = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const secondName = passage.second_name.toLowerCase();
-
-    if (secondName === "icel" && passage.date === "04/13/2024") {
+    if (passage.second_name === "icel" && passage.date === "04/13/2024") {
       navigate("/reservation");
     } else {
       if (passage.second_name !== "icel") {
@@ -90,7 +88,10 @@ const Passage = () => {
           id="second_name"
           type="text"
           onChange={(e) => {
-            setPassage({ ...passage, second_name: e.target.value });
+            setPassage({
+              ...passage,
+              second_name: e.target.value.toLowerCase(),
+            });
             setSecondNameIsCorrect(true);
           }}
           value={passage.second_name}
