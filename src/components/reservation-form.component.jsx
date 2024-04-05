@@ -208,7 +208,7 @@ const ReservationForm = () => {
                 ? errorInputs.second_seat_phone
                 : isNaN(guestInputs.second_seat_phone)
                 ? "Please input number only."
-                : "Second Seat Phone Number"}
+                : "Second Seat Phone Number (Optional)"}
             </label>
           </div>
         </Fragment>
