@@ -82,7 +82,7 @@ const ReservationForm = () => {
           htmlFor="first_seat_name"
           className={`peer-focus:font-medium absolute text-md duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 ${
             errorInputs.first_seat_name
-              ? "peer-focus:text-red-600 peer-focus:dark:text-red-300 text-red-500 dark:text-red-300"
+              ? "peer-focus:text-red-600 peer-focus:dark:text-red-300 text-red-500 dark:text-red-300 5xs:text-xs xs:text-base"
               : "peer-focus:text-blue-600 peer-focus:dark:text-blue-500 text-gray-500 dark:text-gray-400"
           }`}
         >
@@ -109,7 +109,7 @@ const ReservationForm = () => {
         />
         <label
           htmlFor="first_seat_phone"
-          className={`peer-focus:font-medium absolute text-md duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 ${
+          className={`peer-focus:font-medium absolute text-md duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 5xs:text-xs xs:text-base ${
             errorInputs.first_seat_phone || isNaN(guestInputs.first_seat_phone)
               ? "peer-focus:text-red-600 peer-focus:dark:text-red-300 text-red-500 dark:text-red-300"
               : "peer-focus:text-blue-600 peer-focus:dark:text-blue-500 text-gray-500 dark:text-gray-400"
@@ -167,7 +167,7 @@ const ReservationForm = () => {
               htmlFor="second_seat_name"
               className={`peer-focus:font-medium absolute text-md duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 ${
                 errorInputs.second_seat_name
-                  ? "peer-focus:text-red-600 peer-focus:dark:text-red-300 text-red-500 dark:text-red-300"
+                  ? "peer-focus:text-red-600 peer-focus:dark:text-red-300 text-red-500 dark:text-red-300 5xs:text-xs xs:text-base"
                   : "peer-focus:text-blue-600 peer-focus:dark:text-blue-500 text-gray-500 dark:text-gray-400"
               }`}
             >
@@ -194,10 +194,9 @@ const ReservationForm = () => {
               }`}
               maxLength="9"
             />
-
             <label
               htmlFor="second_seat_phone"
-              className={`peer-focus:font-medium absolute text-md duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 ${
+              className={`peer-focus:font-medium absolute text-md duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 5xs:text-xs xs:text-base ${
                 errorInputs.second_seat_phone ||
                 isNaN(guestInputs.second_seat_phone)
                   ? "peer-focus:text-red-600 peer-focus:dark:text-red-300 text-red-500 dark:text-red-300"
@@ -208,7 +207,7 @@ const ReservationForm = () => {
                 ? errorInputs.second_seat_phone
                 : isNaN(guestInputs.second_seat_phone)
                 ? "Please input number only."
-                : "Second Seat Phone Number (Optional)"}
+                : "Second Seat Phone Number (Opt)"}
             </label>
           </div>
         </Fragment>
@@ -231,7 +230,7 @@ const ReservationForm = () => {
         </select>
         <label
           htmlFor="confirmation"
-          className={`peer-focus:font-medium absolute text-md duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 ${
+          className={`peer-focus:font-medium absolute text-md duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4  peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6 5xs:text-xs xs:text-base ${
             errorInputs.confirmation
               ? "peer-focus:text-red-600 peer-focus:dark:text-red-300 text-red-500 dark:text-red-300"
               : "peer-focus:text-blue-600 peer-focus:dark:text-blue-500 text-gray-500 dark:text-gray-400"

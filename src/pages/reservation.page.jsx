@@ -4,7 +4,7 @@ import ReservationForm from "../components/reservation-form.component";
 const ReservationPage = () => {
   return (
     <div className="flex flex-col items-center">
-      <div className="w-10/12 4xs:w-9/12 3xs:w-8/12 2xs:w-7/12 xs:w-6/12 md:w-5/12 lg:w-4/12 xl:w-3/12 2xl:w-[21%] lg:mt-12">
+      <div className="w-10/12 4xs:w-9/12 3xs:w-8/12 2xs:w-7/12 md:w-5/12 lg:w-4/12 xl:w-3/12 2xl:w-[21%] lg:mt-12">
         <div className="flex justify-center mt-5">
           <DarkThemeToggle />
         </div>
